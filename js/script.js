@@ -10,5 +10,5 @@ form.addEventListener('submit', (e) => {
     }
     let convertData = JSON.stringify(data)
 
-    localStorage.setItem('lead', convertData);
+    localStorage.setItem('cadastroemail', convertData);
 })

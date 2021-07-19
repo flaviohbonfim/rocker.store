@@ -1,36 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>rockerstore</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>rocker.store</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ab74162177.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <section class="section-container">
-        <img src="assets/logo.png" alt="logo">
-    </section>
-    <section class="background-section">
-        <div class="esquerda">
-            
-        </div>  
-        <div class="card-container">
-            <div id="content">
-                <form id="form">
-                    <input type="text" placeholder="nome" id="nome">
-                    <input type="text" placeholder="email" id="email">
-                    <input type="submit" value="cadastrar">
-                </form>
-            </div>
+    <header>
+        <div class="logo">
+            <a href="/"><img src="./images/logo.png" alt="rocker.store" width="250px"/></a>
         </div>
-    </section>
-    <footer>
-        <p>Todos os direitos reservados a rockerstore!</i></p>
+        
+        <nav>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">sobre</a></li>
+                <li><a href="#">contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content-left">
+            <h2>WE WILL</h2>
+            <h1>ROCK YOU!</h1>
+            <p>Cadastre-se para receber promoções e novidades exclusivas em seu email</p>
+            <form id="form">
+                <input type="text" placeholder="nome" id="nome">
+                <input type="text" placeholder="email" id="email">    
+                <button type="submit" class="cta">cadastrar</button>
+            </form>
+        </div>
+        <div class="content-right">
+            <img src="./images/bg.jpg" alt="images" class="hero-img">
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Todos os direitos reservados.</p>
+        <i class="fab fa-github"></i><a href="http://github.com/flaviohbonfim" target="_blank">flaviohbonfim</a>
     </footer>
-
 </body>
 <script src="js/script.js"></script>
 </html>
