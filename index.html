@@ -3,46 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico"/>
     <title>rocker.store</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/print.css" media="print" />
+    <link rel="stylesheet" href="./css/responsive.css" media="screen and (max-width: 768px)" />
     <script src="https://kit.fontawesome.com/ab74162177.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <a href="/">
-                <img src="./images/logo.svg" alt="rocker.store" width="240px"/>
-            </a>
-        </div>       
-        <nav>
-            <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">sobre</a></li>
-                <li><a href="#">contato</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+                <a href="/">
+                    <img src="./images/logo.svg" alt="rocker.store"/>
+                </a> 
+            <div class="menu-section">
+                <div class="menu-toggle">
+                  <div class="one"></div>
+                  <div class="two"></div>
+                  <div class="three"></div>
+                </div> 
+                <nav>
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">sobre</a></li>
+                        <li><a href="#">contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
-    <main>
-        <div class="content-left">
-            <h2>WE WILL</h2>
-            <h1>ROCK YOU!</h1>
-            <p>Cadastre-se para receber promoções e novidades exclusivas em seu email</p>
-            <form id="form">
-                <input type="text" placeholder="nome" id="nome">
-                <input type="email" placeholder="email" id="email">    
-                <button type="submit" class="cta">cadastrar</button>
-            </form>
+    <section class="hero">
+        <div class="container">
+            <div>
+                <h2>WE WILL</h2>
+                <h1>ROCK YOU!</h1>
+                <p>Cadastre-se para receber promoções e novidades exclusivas em seu email</p>
+                <form id="form">
+                    <input type="text" placeholder="nome" id="nome">
+                    <input type="email" placeholder="email" id="email">    
+                    <button type="submit" class="cta">cadastrar</button>
+                </form>
+            </div>
+            <img src="./images/bg.svg" alt="">
         </div>
-        <div class="content-right">
-            <img src="./images/bg.svg" alt="images" class="hero-img">
-        </div>
-    </main>
+    </section>
     <footer class="footer">
         <p>Desenvolvido por Flávio Henrique Bonfim</p>
-        <i class="fab fa-github"></i><a href="http://github.com/flaviohbonfim" target="_blank">flaviohbonfim</a>
+        <a href="http://github.com/flaviohbonfim" target="_blank"><i class="fab fa-github"></i>flaviohbonfim</a>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 <script src="js/script.js"></script>
 </html>

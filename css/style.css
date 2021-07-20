@@ -1,43 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    /* The box-sizing property defines how the width and height of an element are calculated: should they include padding and borders, or not. */
+    outline: 0;
 }
 
+html {
+    /* a cada 1rem será considera 10px */
+    font-size: 62.5%;
+  }
+  
+html,
 body {
+    height: 100vh;
     font-family: 'Open Sans', sans-serif;
-    background-color: #fff;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+    
+}
+  
+body {
+    font-size: 1.6rem;
 }
 
 header {
-    height: 65px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-bottom: 5px solid whitesmoke;
-    vertical-align: center;
     background-color: #fff;
-}
-
-ul {
+    border-bottom: 5px solid whitesmoke;
+    padding: 0;
+    margin: 0;
+    height: 65px;
+  }
+  
+header .container {
     display: flex;
-    list-style-type: none;
     align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;   
+    margin: auto;
 }
 
-ul li a {
-    padding: 0 20px;
+header img {
+    width: 230px;
+    margin-left: 10px;
+}
+
+header nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+  
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
     text-decoration: none;
-    color: #3A3A3A;
+    color: black;
+    font-size: 1.8rem; 
+    padding: 1.0rem;
     display: inline-block;
+    transition: all .5s; 
 }
 
-.logo{
-    padding-top: 10px;
-}
-
-li a::after {
+header nav ul li a::after {
     content: '';
     display: block;
     height: 4px;
@@ -47,51 +76,87 @@ li a::after {
     transition: all .5s;
 }
 
-li a:hover::after {
+header nav ul li a:hover::after {
     width: 100%;
 }
 
-main {
+
+.button {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: rgb(113, 89, 193);
+    margin: 15px 0px 0px;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 150ms linear 0s;
+  }
+  
+  .button:hover {
+    opacity: 0.9;
+  }
+  
+  section.hero {
+    margin: 0px 0;
+    padding: 3.44% 20%;
+  }
+  
+  section.hero .container {
+    width: 90%;
+    max-width: 980px; 
+    margin: 0;
     display: flex;
-    align-items: center;
-    /* align-items - vertically align */
-    justify-content: center;
-    /* justify- horizontally align */
-    height: calc(100vh - 110px);
+  }
+  
+  section.hero p {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #333;
+    line-height: 31.5px;
+    margin: 30px 0;
+  }
+
+section {
     background-color: #02DAFF;
 }
 
-.hero-img {
-    max-width: 670px;
+form {
+    text-align: center;
+}
+
+section.hero .container input{
+    background-color: #000;
+    height: 35px;
+    width: 100%;    
+    padding-bottom: 1.5rem;
+    border-radius: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+section.hero img {
+    max-width: 620px;
     height: auto;
 }
 
-.content-left {
-    width: 30%;
-}
-
-main h1 {
-    font-size: 64px;
+h1 {
+    font-size: 6.5rem;
     color: #133B4F;
     text-transform: uppercase;
 }
 
-main h2 {
-    font-size: 45px;
+h2 {
+    padding-top: 20%;
+    font-size: 5.5rem;
     color: #fff;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 8px;
 }
-
-main p {
-    font-size: 16px;
-    font-weight: 400;
-    color: #333;
-    line-height: 31.5px;
-    margin: 30px 0;
-}
-
 
 .cta {
     width: 120px;
@@ -103,6 +168,7 @@ main p {
     border-radius: 50px;
     align-items: center;
     cursor:pointer;
+    margin-top: 10px;
 }
 
 .cta:hover{
@@ -110,32 +176,23 @@ main p {
     color: #fff;
 }
 
-.content-left input{
-    background-color: #000;
-    height: 35px;
-    width: 220px;
-    border-radius: 50px;
-    text-align: center;
-    color: #fff;
-}
-.content-left input:focus{
-    outline:0;
-}
-
 footer{
-    height: 45px;
-    text-align: center;
+    width:100%;
+    background: #02DAFF;
+    margin:0; 
+    display:flex;
+    flex-direction: column;
     align-items: center;
-    background-color: #02DAFF;
+    justify-content: center;
 }
 
 footer p{
-    font-size: 14px; 
+    padding-top: 0.4%;
+    font-size: 1.5rem; 
 }
 
 footer a{
-    font-size: 14px; 
-    padding: 0 5px;
+    font-size: 1.5rem; 
     text-decoration: none;
     color: #3A3A3A;
     display: inline-block;
